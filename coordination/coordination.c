@@ -17,6 +17,7 @@ void *thr_func(void *ptr) {
 
         if (g_value > 0) {
             break;
+
         } else {
             if (pthread_mutex_unlock(&g_mutex) != 0) {
                 exit(EXIT_FAILURE);
